@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image</title>
+    <style>
+        /* 1. Remove default padding/margin from the browser */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars if the image is slightly off */
+        }
+
+        /* 2. Style the container/image */
+        .fullscreen-bg {
+            width: 100%;
+            height: 100vh; /* 'vh' stands for viewport height */
+            background-image: url('./images/schuh_returns.png');
+            background-size: cover; /* This scales the image to fill the screen */
+            background-position: center; /* Keeps the middle of the image visible */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fullscreen-bg"></div>
+
+</body>
+</html>
